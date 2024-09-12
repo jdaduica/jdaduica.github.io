@@ -2,6 +2,5 @@
 title: "Julian Daduica's DSCI 521 Website"
 ---
 
-This is a Quarto website.
+Hello, my name is Julian Daduica. I am currently 23 years old and attending the Univeristy of British Columbia Master of Data Science program. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

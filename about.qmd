@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+Hello, my name is Julian Daduica. I am in the UBC MDS program
