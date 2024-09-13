@@ -3,4 +3,4 @@ title: "About"
 ---
 
 
-Hello, my name is Julian Daduica. I am currently 23 years old and attending the Univeristy of British Columbia Master of Data Science program. I enjoy playing soccer, running, and skiing. 
+This is where I will be sharing my experiences and projects throughout my journey in MDS!
