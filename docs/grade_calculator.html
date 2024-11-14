@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>My Portfolio – Julian Daduica’s DSCI 521 Website</title>
+<title>Grade Calculator – Julian Daduica’s DSCI 521 Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -112,10 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-my-portfolio" id="toc-welcome-to-my-portfolio" class="nav-link active" data-scroll-target="#welcome-to-my-portfolio">Welcome to My Portfolio</a>
-  <ul class="collapse">
-  <li><a href="#contact-me" id="toc-contact-me" class="nav-link" data-scroll-target="#contact-me">Contact Me</a></li>
-  </ul></li>
+  <li><a href="#simple-grade-calculator" id="toc-simple-grade-calculator" class="nav-link active" data-scroll-target="#simple-grade-calculator">Simple Grade Calculator</a></li>
   </ul>
 </nav>
     </div>
@@ -124,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Portfolio</h1>
+<h1 class="title">Grade Calculator</h1>
 </div>
 
 
@@ -141,33 +138,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hello, my name is Julian Daduica. I was born in Coquitlam, BC and moved to Prince George when I was 8 years old. I continued through high school and univeristy at the University of Northern British Columbia. I have a BSc in Biochemsitry and Molecular Biology. I also did some reseach on Forrest microbial communities using various bioinformatic techniques.</p>
-<p>I am currently 23 years old and attending the Univeristy of British Columbia Master of Data Science program. I enjoy playing soccer, running, and skiing.</p>
-<section id="welcome-to-my-portfolio" class="level1">
-<h1>Welcome to My Portfolio</h1>
-<p>Welcome to my personal website! Here you’ll find details about my projects and experience in data science.</p>
-<hr>
-<section id="contact-me" class="level2">
-<h2 class="anchored" data-anchor-id="contact-me">Contact Me</h2>
-<p>I’m always open to new opportunities and collaborations! Feel free to reach out.</p>
-<ul>
-<li><strong>Email</strong>: <a href="mailto:juliandad2001@hotmail.com">juliandad2001@hotmail.com</a></li>
-</ul>
-<p>Or, fill out the contact form below:</p>
-<form action="https://formspree.io/f/xwpkbwga" method="POST">
-<p><label for="name">Your Name:</label><br> <input type="text" id="name" name="name" required=""><br><br></p>
-<p><label for="email">Your Email:</label><br> <input type="email" id="email" name="email" required=""><br><br></p>
-<label for="message">Message:</label><br>
-<textarea id="message" name="message" rows="4" required=""></textarea>
-<p><br><br></p>
-<button type="submit">
-Send Message
+<section id="simple-grade-calculator" class="level1">
+<h1>Simple Grade Calculator</h1>
+<p>Use this tool to calculate your final grade based on weighted assignments.</p>
+<form id="gradeCalculator">
+<p><label for="assignmentGrade">Assignment Grade (%):</label> <input type="number" id="assignmentGrade" min="0" max="100" required=""><br><br></p>
+<p><label for="midtermGrade">Midterm Grade (%):</label> <input type="number" id="midtermGrade" min="0" max="100" required=""><br><br></p>
+<p><label for="finalExamGrade">Final Exam Grade (%):</label> <input type="number" id="finalExamGrade" min="0" max="100" required=""><br><br></p>
+<p><label for="assignmentWeight">Assignment Weight (%):</label> <input type="number" id="assignmentWeight" min="0" max="100" value="30" required=""><br><br></p>
+<p><label for="midtermWeight">Midterm Weight (%):</label> <input type="number" id="midtermWeight" min="0" max="100" value="30" required=""><br><br></p>
+<p><label for="finalExamWeight">Final Exam Weight (%):</label> <input type="number" id="finalExamWeight" min="0" max="100" value="40" required=""><br><br></p>
+<button type="button" onclick="calculateGrade()">
+Calculate Final Grade
 </button>
 </form>
-<p><a href="./grade_calculator.html">Go to Grade Calculator</a></p>
+<p id="finalGradeOutput">
+</p>
+<script>
+  function calculateGrade() {
+    const assignmentGrade = parseFloat(document.getElementById('assignmentGrade').value);
+    const midtermGrade = parseFloat(document.getElementById('midtermGrade').value);
+    const finalExamGrade = parseFloat(document.getElementById('finalExamGrade').value);
+    const assignmentWeight = parseFloat(document.getElementById('assignmentWeight').value) / 100;
+    const midtermWeight = parseFloat(document.getElementById('midtermWeight').value) / 100;
+    const finalExamWeight = parseFloat(document.getElementById('finalExamWeight').value) / 100;
+
+    const finalGrade = (assignmentGrade * assignmentWeight) + (midtermGrade * midtermWeight) + (finalExamGrade * finalExamWeight);
+
+    document.getElementById('finalGradeOutput').innerText = `Your final grade is: ${finalGrade.toFixed(2)}%`;
+  }
+</script>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

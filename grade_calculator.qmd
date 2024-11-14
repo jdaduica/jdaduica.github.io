@@ -1,0 +1,46 @@
+---
+title: "Grade Calculator"
+---
+
+# Simple Grade Calculator
+
+Use this tool to calculate your final grade based on weighted assignments.
+
+<form id="gradeCalculator">
+  <label for="assignmentGrade">Assignment Grade (%):</label>
+  <input type="number" id="assignmentGrade" min="0" max="100" required><br><br>
+
+  <label for="midtermGrade">Midterm Grade (%):</label>
+  <input type="number" id="midtermGrade" min="0" max="100" required><br><br>
+
+  <label for="finalExamGrade">Final Exam Grade (%):</label>
+  <input type="number" id="finalExamGrade" min="0" max="100" required><br><br>
+
+  <label for="assignmentWeight">Assignment Weight (%):</label>
+  <input type="number" id="assignmentWeight" min="0" max="100" value="30" required><br><br>
+
+  <label for="midtermWeight">Midterm Weight (%):</label>
+  <input type="number" id="midtermWeight" min="0" max="100" value="30" required><br><br>
+
+  <label for="finalExamWeight">Final Exam Weight (%):</label>
+  <input type="number" id="finalExamWeight" min="0" max="100" value="40" required><br><br>
+
+  <button type="button" onclick="calculateGrade()">Calculate Final Grade</button>
+</form>
+
+<p id="finalGradeOutput"></p>
+
+<script>
+  function calculateGrade() {
+    const assignmentGrade = parseFloat(document.getElementById('assignmentGrade').value);
+    const midtermGrade = parseFloat(document.getElementById('midtermGrade').value);
+    const finalExamGrade = parseFloat(document.getElementById('finalExamGrade').value);
+    const assignmentWeight = parseFloat(document.getElementById('assignmentWeight').value) / 100;
+    const midtermWeight = parseFloat(document.getElementById('midtermWeight').value) / 100;
+    const finalExamWeight = parseFloat(document.getElementById('finalExamWeight').value) / 100;
+
+    const finalGrade = (assignmentGrade * assignmentWeight) + (midtermGrade * midtermWeight) + (finalExamGrade * finalExamWeight);
+
+    document.getElementById('finalGradeOutput').innerText = `Your final grade is: ${finalGrade.toFixed(2)}%`;
+  }
+</script>
