@@ -9,16 +9,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "My Portfolio",
+    "title": "Julian Daduica’s DSCI 521 Website",
     "section": "",
-    "text": "Hello, my name is Julian Daduica. I was born in Coquitlam, BC and moved to Prince George when I was 8 years old. I continued through high school and univeristy at the University of Northern British Columbia. I have a BSc in Biochemsitry and Molecular Biology. I also did some reseach on Forrest microbial communities using various bioinformatic techniques.\nI am currently 23 years old and attending the Univeristy of British Columbia Master of Data Science program. I enjoy playing soccer, running, and skiing."
+    "text": "Welcome to My Portfolio\nWelcome to my personal website! Here you’ll find details about my projects and experience in data science.\nHello, my name is Julian Daduica. I was born in Coquitlam, BC and moved to Prince George when I was 8 years old. I continued through high school and univeristy at the University of Northern British Columbia. I have a BSc in Biochemsitry and Molecular Biology. I also did some reseach on Forrest microbial communities using various bioinformatic techniques.\nI am currently 23 years old and attending the Univeristy of British Columbia Master of Data Science program. I enjoy playing soccer, running, and skiing."
   },
   {
-    "objectID": "index.html#contact-me",
-    "href": "index.html#contact-me",
-    "title": "My Portfolio",
-    "section": "Contact Me",
-    "text": "Contact Me\nI’m always open to new opportunities and collaborations! Feel free to reach out.\n\nEmail: juliandad2001@hotmail.com\n\nOr, fill out the contact form below:\n\nYour Name: \nYour Email: \nMessage:\n\n\n\nSend Message\n\n\nGo to Grade Calculator"
+    "objectID": "Contact_page.html",
+    "href": "Contact_page.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Feel free to reach out for collaboration, questions, or opportunities.\n\n\nPlease fill out the form below, and I will get back to you as soon as possible.\n\nYour Name: \nYour Email: \nMessage:\n\n\n\nSend Message\n\n\n\n\n\nYou can also reach me through the following channels:\n\nEmail: juliandad2001@hotmail.com\nLinkedIn: https://linkedin.com/in/julian-daduica-1a8a68245\nGitHub: github.com/jdaduica"
+  },
+  {
+    "objectID": "Contact_page.html#contact-form",
+    "href": "Contact_page.html#contact-form",
+    "title": "Contact",
+    "section": "",
+    "text": "Please fill out the form below, and I will get back to you as soon as possible.\n\nYour Name: \nYour Email: \nMessage:\n\n\n\nSend Message\n\n\n\n\n\nYou can also reach me through the following channels:\n\nEmail: juliandad2001@hotmail.com\nLinkedIn: https://linkedin.com/in/julian-daduica-1a8a68245\nGitHub: github.com/jdaduica"
   },
   {
     "objectID": "about.html",

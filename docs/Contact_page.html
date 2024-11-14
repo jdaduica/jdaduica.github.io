@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Grade Calculator – Julian Daduica’s DSCI 521 Website</title>
+<title>Contact – Julian Daduica’s DSCI 521 Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -97,11 +97,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Contact_page.html"> 
+    <a class="nav-link active" href="./Contact_page.html" aria-current="page"> 
 <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./grade_calculator.html" aria-current="page"> 
+    <a class="nav-link" href="./grade_calculator.html"> 
 <span class="menu-text">Grade Calculator</span></a>
   </li>  
 </ul>
@@ -120,7 +120,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#simple-grade-calculator" id="toc-simple-grade-calculator" class="nav-link active" data-scroll-target="#simple-grade-calculator">Simple Grade Calculator</a></li>
+  <li><a href="#contact-me" id="toc-contact-me" class="nav-link active" data-scroll-target="#contact-me">Contact Me</a>
+  <ul class="collapse">
+  <li><a href="#contact-form" id="toc-contact-form" class="nav-link" data-scroll-target="#contact-form">Contact Form</a>
+  <ul class="collapse">
+  <li><a href="#alternative-contact-methods" id="toc-alternative-contact-methods" class="nav-link" data-scroll-target="#alternative-contact-methods">Alternative Contact Methods</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -129,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Grade Calculator</h1>
+<h1 class="title">Contact</h1>
 </div>
 
 
@@ -146,38 +152,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="simple-grade-calculator" class="level1">
-<h1>Simple Grade Calculator</h1>
-<p>Use this tool to calculate your final grade based on weighted assignments.</p>
-<form id="gradeCalculator">
-<p><label for="assignmentGrade">Assignment Grade (%):</label> <input type="number" id="assignmentGrade" min="0" max="100" required=""><br><br></p>
-<p><label for="midtermGrade">Midterm Grade (%):</label> <input type="number" id="midtermGrade" min="0" max="100" required=""><br><br></p>
-<p><label for="finalExamGrade">Final Exam Grade (%):</label> <input type="number" id="finalExamGrade" min="0" max="100" required=""><br><br></p>
-<p><label for="assignmentWeight">Assignment Weight (%):</label> <input type="number" id="assignmentWeight" min="0" max="100" value="30" required=""><br><br></p>
-<p><label for="midtermWeight">Midterm Weight (%):</label> <input type="number" id="midtermWeight" min="0" max="100" value="30" required=""><br><br></p>
-<p><label for="finalExamWeight">Final Exam Weight (%):</label> <input type="number" id="finalExamWeight" min="0" max="100" value="40" required=""><br><br></p>
-<button type="button" onclick="calculateGrade()">
-Calculate Final Grade
+<section id="contact-me" class="level1">
+<h1>Contact Me</h1>
+<p>Feel free to reach out for collaboration, questions, or opportunities.</p>
+<section id="contact-form" class="level2">
+<h2 class="anchored" data-anchor-id="contact-form">Contact Form</h2>
+<p>Please fill out the form below, and I will get back to you as soon as possible.</p>
+<form action="https://formspree.io/f/xwpkbwga" method="POST">
+<p><label for="name">Your Name:</label><br> <input type="text" id="name" name="name" required=""><br><br></p>
+<p><label for="email">Your Email:</label><br> <input type="email" id="email" name="email" required=""><br><br></p>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" rows="4" required=""></textarea>
+<p><br><br></p>
+<button type="submit">
+Send Message
 </button>
 </form>
-<p id="finalGradeOutput">
-</p>
-<script>
-  function calculateGrade() {
-    const assignmentGrade = parseFloat(document.getElementById('assignmentGrade').value);
-    const midtermGrade = parseFloat(document.getElementById('midtermGrade').value);
-    const finalExamGrade = parseFloat(document.getElementById('finalExamGrade').value);
-    const assignmentWeight = parseFloat(document.getElementById('assignmentWeight').value) / 100;
-    const midtermWeight = parseFloat(document.getElementById('midtermWeight').value) / 100;
-    const finalExamWeight = parseFloat(document.getElementById('finalExamWeight').value) / 100;
-
-    const finalGrade = (assignmentGrade * assignmentWeight) + (midtermGrade * midtermWeight) + (finalExamGrade * finalExamWeight);
-
-    document.getElementById('finalGradeOutput').innerText = `Your final grade is: ${finalGrade.toFixed(2)}%`;
-  }
-</script>
+<hr>
+<section id="alternative-contact-methods" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-contact-methods">Alternative Contact Methods</h3>
+<p>You can also reach me through the following channels:</p>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:juliandad2001@hotmail.com">juliandad2001@hotmail.com</a></li>
+<li><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/julian-daduica-1a8a68245">https://linkedin.com/in/julian-daduica-1a8a68245</a></li>
+<li><strong>GitHub</strong>: <a href="https://github.com/jdaduica">github.com/jdaduica</a></li>
+</ul>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

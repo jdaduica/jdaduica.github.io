@@ -2,48 +2,18 @@
 title: "Julian Daduica's DSCI 521 Website"
 ---
 
-Hello, my name is Julian Daduica. I was born in Coquitlam, BC and moved to Prince George when I was 8 years old. I continued through high school and univeristy at the University of Northern British Columbia. I have a BSc in Biochemsitry and Molecular Biology. I also did some reseach on Forrest microbial communities using various bioinformatic techniques.
-
-I am currently 23 years old and attending the Univeristy of British Columbia Master of Data Science program. I enjoy playing soccer, running, and skiing. 
-
-
----
-title: "My Portfolio"
----
 
 # Welcome to My Portfolio
 
 Welcome to my personal website! Here you'll find details about my projects and experience in data science.
 
----
 
-## Contact Me
+Hello, my name is Julian Daduica. I was born in Coquitlam, BC and moved to Prince George when I was 8 years old. I continued through high school and univeristy at the University of Northern British Columbia. I have a BSc in Biochemsitry and Molecular Biology. I also did some reseach on Forrest microbial communities using various bioinformatic techniques.
 
-I'm always open to new opportunities and collaborations! Feel free to reach out.
-
-- **Email**: [juliandad2001@hotmail.com](mailto:juliandad2001@hotmail.com)
-
-Or, fill out the contact form below:
-
-<form action="https://formspree.io/f/xwpkbwga" method="POST">
-  <label for="name">Your Name:</label><br>
-  <input type="text" id="name" name="name" required><br><br>
-
-  <label for="email">Your Email:</label><br>
-  <input type="email" id="email" name="email" required><br><br>
-
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-  <button type="submit">Send Message</button>
-</form>
+I am currently 23 years old and attending the Univeristy of British Columbia Master of Data Science program. I enjoy playing soccer, running, and skiing. 
 
 
----
-title: "My Portfolio"
----
 
-[Go to Grade Calculator](grade_calculator.qmd)
 
 
 
